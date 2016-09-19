@@ -271,8 +271,10 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
 /* modal */
 
     .reveal {
-        margin-top: 2em;
+        max-height: 90%;
         padding-top: 4em;
+        opacity: .9;
+        overflow: scroll;
     }
 
 

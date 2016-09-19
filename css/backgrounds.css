@@ -10,7 +10,7 @@ Background Image Styles
 /* rotating  background-images */ 
 
 .callout:nth-child(1) {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/paisley.png);
+  background-color: white;
 }
 .callout:nth-child(2) {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/weather.png);
@@ -106,7 +106,7 @@ Background Image Styles
 }
 
 #when-we-work-together{
-    background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_background2.png)
+    background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_background2.png);
 }
 
 #beneficiaries {
