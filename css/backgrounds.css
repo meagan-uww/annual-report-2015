@@ -1,0 +1,110 @@
+.callout {
+  background-attachment: fixed;
+  /*The Slides*/
+}
+
+
+.callout:nth-child(1) {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/paisley.png);
+}
+.callout:nth-child(2) {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/weather.png);
+}
+.callout:nth-child(3) {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/swirl_pattern.png);
+}
+
+
+
+
+/*overlay and underlay*/
+.overlay:before {
+    background: rgba(0,0,0,.33);
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    transition: .3s;
+    z-index: 2;
+}
+
+.overlay h1, .underlay h1{
+    color: white;
+}
+
+.overlay .slide-text h2{
+    color: #e2e2e2;
+}
+
+
+/* underlay */
+
+.underlay {
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    padding: 2em;
+    margin: 20% auto;
+}
+
+.underlay .slide-text h2 {
+    color: #969696;
+}
+
+.underlay-container .row {
+    padding-left: 0!important;
+    padding-right: 0!important;
+    max-width: 100%!important
+}
+
+div.underlay-container {
+    padding-left: 0!important;
+    padding-right: 0!important;
+    margin: 0;
+}
+
+
+
+
+/* background-image */
+
+.background-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dark h1, .dark p {
+    color: white;
+}
+
+.dark h2 {
+    color: #969696;
+}
+
+
+/* special snowflakes */
+
+#cover {
+    background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_coverart.png);
+}
+
+#hero-effect {
+    background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar-hero-effect.jpg);
+}
+
+#when-we-work-together{
+    background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_background2.png)
+}
+
+#beneficiaries {
+    background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_background1.png);
+    color: white;
+}
+
+#nfl {
+    background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/United_Way_Images_for_Fox-4.jpeg);
+}
+

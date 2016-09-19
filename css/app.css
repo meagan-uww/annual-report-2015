@@ -1,0 +1,361 @@
+/* test stuff */
+
+
+/*===== Global Styles =====*/
+body{
+    padding:0;
+    margin: 0;
+}
+
+a {
+    font-weight: bold;
+    transition: ease .5s;
+}
+
+a:hover{
+    color: #DC3601;
+}
+
+.full-screen-height {
+    height: 100vh;
+    position: relative;
+    display: table;
+    width: 100%;
+    border: 8px solid #fff;
+    margin-top: -8px;
+}
+
+.row {
+    z-index: 3;
+}
+
+/*======== Nav / title bar =========*/
+.main-nav{
+    position: fixed; 
+    display: block; 
+    top: 0; 
+    left: 0; 
+    right: 0;
+    z-index: 1000;
+    transition: .4s;
+}
+
+/*nav show/hide */
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hide {
+   visibility: hidden;
+   opacity: 0;
+}
+
+.top-bar{
+    width:100%;
+}
+
+.title-bar, .top-bar, .top-bar ul.submenu{
+    background: rgba(80,80,80,.7);
+    border: none;
+}
+
+.top-bar ul {
+    background-color: transparent;
+}
+
+
+.top-bar, .top-bar a {
+    color: white;
+}
+
+.dropdown.menu>li.is-dropdown-submenu-parent>a:after {
+        border-color: #ffffff transparent transparent;
+}
+
+
+/* prevent FOUC */
+
+.no-js .top-bar {
+  display: none;
+}
+
+@media screen and (min-width: 40em) {
+  .no-js .top-bar {
+    display: block;
+  }
+
+  .no-js .title-bar {
+    display: none;
+  }
+}
+
+
+/* hide top-bar if modal is open */
+
+.is-reveal-open .top-bar {
+    display: none;
+}
+
+
+
+
+
+
+/* submenu stuff */
+
+.dropdown.menu.medium-horizontal>li.is-dropdown-submenu-parent>a:after {
+    border-color: white transparent transparent;
+}
+
+ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
+    top: 117%;
+}
+
+
+/*======== Cover ===========*/
+.callout.primary{
+    background: #10167f center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#title{
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+}
+
+#title h1{
+    color:white;
+}
+
+.subheader {
+    color: #F8AB40;
+}
+
+
+/*=========== Content =================*/
+
+.content{
+    border: solid white;
+    border-width: 0 12px;
+}
+
+
+.callout{
+    border: 0;
+    border-bottom: 12px solid white;
+    background: #969696;
+    margin: 0;
+}
+
+.section-lead .row{
+    margin-top: 30px;
+}
+
+
+/*slider stuff */
+
+    /* bullet buttons */
+
+    .orbit-bullets button, .orbit-bullets button:after {
+        background: #969696;
+        border: 0;
+        box-sizing: border-box;
+        position: inherit;
+        padding: 0;
+    }
+
+    .orbit-bullets button:before {
+        border: 0;
+    }
+
+    .orbit-bullets button:after {
+        content: none;
+    }
+
+    .orbit-previous, .orbit-next, .orbit-bullets button {
+            z-index: 1;
+    }
+
+    .orbit-bullets button.is-active, .orbit-bullets button:hover {
+        background-color: #F87907;
+    }
+    
+    /*left-right buttons*/
+
+    .orbit-previous, .orbit-next {
+        background-color: #F87907;
+        border:none;
+        margin-top: -2.1875rem;
+        transition: .3s;
+    }
+
+    .orbit-previous {
+       left: -30px;
+       transform: skew(20deg);
+        padding-left: 3.125rem;
+    }
+
+    .orbit-next {
+         right: -30px;
+        transform: skew(-20deg);
+        padding-right: 3.125rem;
+    }
+
+    button.orbit-previous:before, button.orbit-next:before{
+        border: none;
+    }
+
+    .orbit-next:hover, .orbit-previous:hover {
+        background-color: #F87907;
+    }
+
+    /*container*/
+
+    .orbit-slide {
+        width: 90%;
+        margin: 0 auto;
+        overflow: auto;
+    }
+
+    .orbit-container {
+        height: auto!important
+    }
+
+    li.orbit-slide.text-left.is-active {
+        max-height: 2000px!important;
+    }
+
+/*===== Buttons =====*/
+
+/* new CTA buttons */
+    .button:after, button:after{
+        background:transparent
+    }
+
+    .button, .button.secondary{
+        background: #F87907;
+        border: 0;
+        box-sizing: inherit;
+        border-radius: 4px;
+        color: white!important;
+        transition: ease-in-out .5s;
+        margin-top: 2em;
+    }
+
+    .button.ghost {
+        border: 2px solid #F87907;
+        background: transparent;
+    }
+
+    .button:hover, .button.secondary:hover{
+        background:#DC3601;
+    }
+
+    .button.ghost:hover{
+        background:#DC3601;
+        border-color: #DC3601;
+    }
+
+    #framework .cta__link.submit, .cta__link.button {
+        margin-top: 2em;
+    }
+
+
+/* hamburger fixes */
+
+    button.menu-icon, button.close-button {
+        border: 0;
+        margin: 0;
+        box-sizing: inherit;
+    }
+
+
+    button.menu-icon:before, button.menu-icon:after, button.close-button:after, button.close-button:before {
+        border: 0;
+        -webkit-transform: inherit;
+        transform: inherit;
+    }
+
+
+/* modal button */
+    .reveal {
+        margin-top: 2em;
+        padding-top: 4em;
+    }
+
+/*========= Element Fixes =========*/
+
+/* tout fixes */
+
+.image-touts__tout:before {
+    /*background: linear-gradient(to bottom,transparent 0,rgba(16,22,127,.5) 100%);*/
+    background: rgba(0,0,0,.3);
+    height: 100%;
+    transition: ease-in-out .3s;
+}
+
+.image-touts--four .image-touts__tout:hover:before {
+       /* background: none;*/
+        background: rgba(124,129,184,.1);
+    }
+
+.image-touts--three .image-touts__tout:hover:before {
+       /* background: none;*/
+        background: none;
+    }
+
+
+.image-touts--three .image-touts__tout:after {
+    background: none;
+}
+
+
+/*======= Media Queries ===========*/
+
+
+@media only screen and (min-width: 40em) {
+    #title{
+        margin-top: 25%;
+    }
+    
+    .image-touts--four .image-touts__tout:hover:before {
+        height: 100%;
+    }
+    
+    #hero-effect .row {
+        top: 50%;
+    }
+    
+    #logo {
+        width: 100px;
+        margin-right: 2em;
+    }
+}
+
+@media (max-width: 40em){
+        
+    .orbit-previous, .orbit-next {
+        display: none;
+    }
+    
+    .callout.large {
+        padding: 1rem;
+    }
+    
+    .callout>:first-child {
+        margin-top: 1rem;
+    }
+    
+    #logo {
+       display:none;
+    }
+    
+    .js-dropdown-active li {
+        background: rgba(0,0,0,1);
+    }
+
+}
