@@ -1,7 +1,13 @@
-/* test stuff */
+/*===== 
 
+United Way Worldwide Annual Report 2015
+
+Main Styles
+
+=====*/
 
 /*===== Global Styles =====*/
+
 body{
     padding:0;
     margin: 0;
@@ -30,6 +36,7 @@ a:hover{
 }
 
 /*======== Nav / title bar =========*/
+
 .main-nav{
     position: fixed; 
     display: block; 
@@ -40,20 +47,17 @@ a:hover{
     transition: .4s;
 }
 
-/*nav show/hide */
-
-.show {
-    visibility: visible;
-    opacity: 1;
-}
-
-.hide {
-   visibility: hidden;
-   opacity: 0;
-}
-
 .top-bar{
     width:100%;
+}
+
+.top-bar, .top-bar a {
+    color: white;
+}
+
+
+.top-bar ul {
+    background-color: transparent;
 }
 
 .title-bar, .top-bar, .top-bar ul.submenu{
@@ -61,34 +65,11 @@ a:hover{
     border: none;
 }
 
-.top-bar ul {
-    background-color: transparent;
-}
-
-
-.top-bar, .top-bar a {
-    color: white;
-}
-
-.dropdown.menu>li.is-dropdown-submenu-parent>a:after {
-        border-color: #ffffff transparent transparent;
-}
-
 
 /* prevent FOUC */
 
 .no-js .top-bar {
   display: none;
-}
-
-@media screen and (min-width: 40em) {
-  .no-js .top-bar {
-    display: block;
-  }
-
-  .no-js .title-bar {
-    display: none;
-  }
 }
 
 
@@ -99,13 +80,10 @@ a:hover{
 }
 
 
-
-
-
-
 /* submenu stuff */
 
-.dropdown.menu.medium-horizontal>li.is-dropdown-submenu-parent>a:after {
+.dropdown.menu.medium-horizontal>li.is-dropdown-submenu-parent>a:after,
+.dropdown.menu>li.is-dropdown-submenu-parent>a:after {
     border-color: white transparent transparent;
 }
 
@@ -114,7 +92,9 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
 }
 
 
+
 /*======== Cover ===========*/
+
 .callout.primary{
     background: #10167f center center no-repeat;
     background-size: cover;
@@ -131,9 +111,10 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
     color:white;
 }
 
-.subheader {
+.subheader{
     color: #F8AB40;
 }
+
 
 
 /*=========== Content =================*/
@@ -143,11 +124,11 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
     border-width: 0 12px;
 }
 
-
 .callout{
     border: 0;
     border-bottom: 12px solid white;
-    background: #969696;
+    background-color: #969696;
+    background-attachment: fixed;
     margin: 0;
 }
 
@@ -157,6 +138,7 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
 
 
 /*slider stuff */
+
 
     /* bullet buttons */
 
@@ -184,6 +166,7 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
         background-color: #F87907;
     }
     
+
     /*left-right buttons*/
 
     .orbit-previous, .orbit-next {
@@ -213,6 +196,7 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
         background-color: #F87907;
     }
 
+
     /*container*/
 
     .orbit-slide {
@@ -229,9 +213,12 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
         max-height: 2000px!important;
     }
 
+
+
 /*===== Buttons =====*/
 
 /* new CTA buttons */
+
     .button:after, button:after{
         background:transparent
     }
@@ -281,11 +268,14 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
     }
 
 
-/* modal button */
+/* modal */
+
     .reveal {
         margin-top: 2em;
         padding-top: 4em;
     }
+
+
 
 /*========= Element Fixes =========*/
 
@@ -303,15 +293,10 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
         background: rgba(124,129,184,.1);
     }
 
-.image-touts--three .image-touts__tout:hover:before {
-       /* background: none;*/
+.image-touts--three .image-touts__tout:hover:before,
+.image-touts--three .image-touts__tout:after{
         background: none;
     }
-
-
-.image-touts--three .image-touts__tout:after {
-    background: none;
-}
 
 
 /*======= Media Queries ===========*/
@@ -333,6 +318,14 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
     #logo {
         width: 100px;
         margin-right: 2em;
+    }
+    
+    .no-js .top-bar {
+        display: block;
+    }
+
+    .no-js .title-bar {
+        display: none;
     }
 }
 

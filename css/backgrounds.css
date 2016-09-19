@@ -1,8 +1,13 @@
-.callout {
-  background-attachment: fixed;
-  /*The Slides*/
-}
+/*===== 
 
+United Way Worldwide Annual Report 2015
+
+Background Image Styles
+
+=====*/
+
+
+/* rotating  background-images */ 
 
 .callout:nth-child(1) {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/paisley.png);
@@ -15,9 +20,9 @@
 }
 
 
+/*overlays and underlays*/
 
-
-/*overlay and underlay*/
+/* creating an overlay */
 .overlay:before {
     background: rgba(0,0,0,.33);
     bottom: 0;
@@ -31,10 +36,6 @@
     z-index: 2;
 }
 
-.overlay h1, .underlay h1{
-    color: white;
-}
-
 .overlay .slide-text h2{
     color: #e2e2e2;
 }
@@ -42,15 +43,11 @@
 
 /* underlay */
 
-.underlay {
-    background: rgba(0,0,0,.5);
-    width: 100%;
-    padding: 2em;
-    margin: 20% auto;
-}
 
-.underlay .slide-text h2 {
-    color: #969696;
+.underlay-container {
+    padding-left: 0!important;
+    padding-right: 0!important;
+    margin: 0;
 }
 
 .underlay-container .row {
@@ -59,13 +56,23 @@
     max-width: 100%!important
 }
 
-div.underlay-container {
-    padding-left: 0!important;
-    padding-right: 0!important;
-    margin: 0;
+.underlay {
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    padding: 2em;
+    margin: 20% auto;
 }
 
 
+/* overlay/underlay text */
+
+.overlay h1, .underlay h1{
+    color: white;
+}
+
+.underlay .slide-text h2 {
+    color: #969696;
+}
 
 
 /* background-image */
@@ -75,6 +82,9 @@ div.underlay-container {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+/* styles for dark backgrounds */
 
 .dark h1, .dark p {
     color: white;
