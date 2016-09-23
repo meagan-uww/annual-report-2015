@@ -152,12 +152,11 @@ Background Image Styles
 }
 
 #when-we-work-together{
-    background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_background2.png);
+    background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_background3.png);
 }
 
-#beneficiaries {
+#measure-of-a-society {
     background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_background1.png);
-    color: white;
 }
 
 #nfl {
