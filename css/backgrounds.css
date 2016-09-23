@@ -129,6 +129,7 @@ Background Image Styles
 
 #cover {
     background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_coverart.png);
+    background-attachment: initial;
 }
 
 #childhood-success {
