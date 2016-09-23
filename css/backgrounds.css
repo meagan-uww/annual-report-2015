@@ -9,15 +9,15 @@ Background Image Styles
 
 /* rotating  background-images */ 
 
-.callout:nth-child(1) {
+/*.callout:nth-child(1) {
   background-color: white;
 }
 .callout:nth-child(2) {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/weather.png);
+  background-color: lightgrey;
 }
 .callout:nth-child(3) {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/swirl_pattern.png);
-}
+}*/
 
 
 /*overlays and underlays*/
@@ -66,13 +66,13 @@ Background Image Styles
 
 /* overlay/underlay text */
 
-.overlay h1, .underlay h1{
+.overlay h1, .underlay h1, .underlay .slide-text h2{
     color: white;
 }
 
-.underlay .slide-text h2 {
+/*.underlay .slide-text h2 {
     color: #969696;
-}
+}*/
 
 
 /* background-image */
@@ -86,19 +86,65 @@ Background Image Styles
 
 /* styles for dark backgrounds */
 
-.dark h1, .dark p {
+.dark h1, .dark h2, .dark h3, .dark p {
     color: white;
 }
 
-.dark h2 {
+/*.dark h2 {
     color: #969696;
+}*/
+
+
+/* Overview page */
+
+.overview-box-container{
+    background: transparent;
+    margin: 0;
 }
+.overview-boxes, .overview-box-container {
+    border-radius: 0;
+    border: 0;
+}
+
+.childhood{
+    background: #10167f;
+}
+
+.youth{
+    background: #7c81b8;
+}
+
+.income{
+    background: #fe230a;
+}
+
+.health{
+    background: #ff9600;
+}
+
+
 
 
 /* special snowflakes */
 
 #cover {
     background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_coverart.png);
+}
+
+#childhood-success {
+    background: linear-gradient(to top right,rgba(16,22,127, 1),rgba(16,22,127,.3) 100%);
+}
+
+#youth-success {
+    background: linear-gradient(to top left,rgba(124,129,184, 1),rgba(124,129,184,.3) 100%);
+}
+
+#economic-mobility {
+    background: linear-gradient(to bottom left,rgba(254,35,10, 1),rgba(254,35,10,.3) 100%);
+}
+
+#access-to-health {
+    background: linear-gradient(to bottom right,rgba(255,150,0, 1),rgba(255,150,0,.3) 100%);
 }
 
 #hero-effect {
@@ -116,5 +162,14 @@ Background Image Styles
 
 #nfl {
     background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/United_Way_Images_for_Fox-4.jpeg);
+}
+
+
+@media only screen and (min-width: 64em){
+    .overview-boxes {
+        min-height: 225px;
+        margin: 0;
+    }
+    
 }
 
