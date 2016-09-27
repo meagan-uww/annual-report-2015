@@ -111,7 +111,7 @@ Background Image Styles
 }
 
 .childhood{
-    background: #10167f;
+    background: rgba(16, 22, 127, 1);
 }
 
 .youth{
@@ -119,11 +119,11 @@ Background Image Styles
 }
 
 .income{
-    background: #fe230a;
+    background: rgba(254, 35, 10, 1);
 }
 
 .health{
-    background: #ff9600;
+    background: rgba(255, 150, 0, 1)
 }
 
 
