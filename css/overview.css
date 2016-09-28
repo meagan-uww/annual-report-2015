@@ -1,5 +1,5 @@
 .impact-container {
-  background-image: url(../img/AR_world_bg.png); }
+  background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_world_bg.png); }
 
 .stat-row {
   padding: 1.5rem; }
@@ -17,15 +17,15 @@
     font-size: 1.2em; }
 
 .stat-row.childhood {
-  background: rgba(16, 22, 127, 0.4); }
+  background: rgba(16, 22, 127, 0.6); }
 
 .stat-row.youth {
-  background: rgba(124, 129, 184, 0.4); }
+  background: rgba(124, 129, 184, 0.6); }
 
 .stat-row.income {
-  background: rgba(254, 35, 10, 0.4); }
+  background: rgba(254, 35, 10, 0.6); }
 
 .stat-row.health {
-  background: rgba(255, 150, 0, 0.4); }
+  background: rgba(255, 150, 0, 0.6); }
 
 /*# sourceMappingURL=overview.css.map */
