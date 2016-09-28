@@ -56,7 +56,7 @@ a:hover{
 }
 
 .title-bar, .top-bar, .top-bar ul.submenu{
-    background: rgba(80,80,80,.7);
+    background: rgba(0,0,0,.7);
     border: none;
 }
 
@@ -282,6 +282,10 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
         overflow: scroll;
     }
 
+#CEOModal {
+    padding: 5rem;
+}
+
 
 
 /*========= Element Fixes =========*/
@@ -310,6 +314,17 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
     color: #F87907!important;
     text-transform: none;
     font-weight: bold;
+    transition: none!important;
+}
+
+
+#gcl-grid{
+    background: rgba(0,0,0,.7);
+}
+
+#gcl-grid div{
+    padding: 2em 0;
+    color: white;
 }
 
 
