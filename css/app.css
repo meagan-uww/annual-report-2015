@@ -305,6 +305,13 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
         background: none;
     }
 
+.image-touts--three .image-touts__tout:hover .image-touts__button {
+    background: none;
+    color: #F87907!important;
+    text-transform: none;
+    font-weight: bold;
+}
+
 
 /*======= Media Queries ===========*/
 
