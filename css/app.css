@@ -286,6 +286,16 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
     padding: 5rem;
 }
 
+#CEO-logo{
+    width: 20%;
+    float: left;
+    display: block;
+    margin-bottom: .6em;
+}
+
+#CEOModal h3 {
+    clear: both;
+}
 
 
 /*========= Element Fixes =========*/
@@ -309,12 +319,9 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
         background: none;
     }
 
-.image-touts--three .image-touts__tout:hover .image-touts__button {
-    background: none;
-    color: #F87907!important;
-    text-transform: none;
-    font-weight: bold;
-    transition: none!important;
+
+.image-touts--three span.image-touts__text {
+    color: #F87907;
 }
 
 
@@ -361,6 +368,13 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
     .no-js .top-bar-title {
         display: none;
     }
+}
+
+@media only screen and (min-width: 64.063em){
+.image-touts--three .image-touts__tout:hover .image-touts__text {
+    left: 5%;
+    bottom: 0;
+}
 }
 
 /* against the rules rules */
