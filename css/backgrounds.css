@@ -121,7 +121,7 @@ Background Image Styles
 }
 
 #katrina {
-    background-image:url(../img/NOLA-Katrina%20copy.gif);
+    background-image:url(http://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_katrina_bg.gif);
 }
 
 #hero-effect {
@@ -129,7 +129,7 @@ Background Image Styles
 }
 
 #gcl{
-    background-image: url(../img/img-gcl%20copy.gif)
+    background-image: url(http://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_gcl_bg.gif)
 }
 
 #building-stronger-communities-together{
@@ -145,7 +145,7 @@ Background Image Styles
 }
 
 #labor {
-    background-image: url(../img/uw_volunteer_0029%20copy.gif);
+    background-image: url(http://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_labor_bg.gif);
 }
 
 #donors{
