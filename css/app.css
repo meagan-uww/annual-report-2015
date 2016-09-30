@@ -282,22 +282,6 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
         overflow: scroll;
     }
 
-#CEOModal {
-    padding: 5rem;
-}
-
-#CEO-logo{
-    width: 20%;
-    float: left;
-    display: block;
-    margin-bottom: .6em;
-}
-
-#CEOModal h3 {
-    clear: both;
-}
-
-
 /*========= Element Fixes =========*/
 
 /* tout fixes */
@@ -323,16 +307,8 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
 .image-touts--three span.image-touts__text {
     color: #F87907;
 }
+ 
 
-
-#gcl-grid{
-    background: rgba(0,0,0,.7);
-}
-
-#gcl-grid div{
-    padding: 2em 0;
-    color: white;
-}
 
 
 /*======= Media Queries ===========*/
@@ -374,7 +350,7 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
 .image-touts--three .image-touts__tout:hover .image-touts__text {
     left: 5%;
     bottom: 0;
-}
+    }
 }
 
 /* against the rules rules */

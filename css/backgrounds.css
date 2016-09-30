@@ -90,44 +90,6 @@ Background Image Styles
     color: white;
 }
 
-/*.dark h2 {
-    color: #969696;
-}*/
-
-
-/* Overview page */
-
-.overview-box-container{
-    background: transparent;
-    margin: 0;
-}
-.overview-boxes, .overview-box-container {
-    border-radius: 0;
-    border: 0;
-}
-
-.overview-boxes h4, .overview-boxes p {
-    color: white;
-}
-
-.childhood{
-    background: rgba(16, 22, 127, 1);
-}
-
-.youth{
-    background: rgba(124, 129, 184, 1);
-}
-
-.income{
-    background: rgba(254, 35, 10, 1);
-}
-
-.health{
-    background: rgba(255, 150, 0, 1)
-}
-
-
-
 
 /* special snowflakes */
 
@@ -195,11 +157,4 @@ Background Image Styles
 }
 
 
-@media only screen and (min-width: 64em){
-    .overview-boxes {
-        min-height: 225px;
-        margin: 0;
-    }
-    
-}
 

@@ -1,0 +1,146 @@
+/*===== 
+
+United Way Worldwide Annual Report 2015
+
+Special Element Styles
+
+=====*/
+
+
+
+/*===== CEO letter =====*/
+
+#CEOModal {
+    padding: 5rem;
+}
+
+#CEO-logo {
+    width: 20%;
+    float: left;
+    display: block;
+    margin-bottom: .6em;
+}
+
+#CEOModal h3 {
+    clear: both;
+}
+
+
+
+/*===== Overview Page =====*/
+
+.overview-box-container{
+    background: transparent;
+    margin: 0;
+}
+.overview-boxes, .overview-box-container {
+    border-radius: 0;
+    border: 0;
+}
+
+.overview-boxes h4, .overview-boxes p {
+    color: white;
+}
+
+.childhood {
+    background: rgba(16, 22, 127, 1);
+}
+
+.youth {
+    background: rgba(124, 129, 184, 1);
+}
+
+.income {
+    background: rgba(254, 35, 10, 1);
+}
+
+.health {
+    background: rgba(255, 150, 0, 1)
+}
+
+
+
+@media only screen and (min-width: 64em){
+    .overview-boxes {
+        min-height: 225px;
+        margin: 0;
+    }
+    
+}
+
+
+/*===== Impact Grid =====*/
+
+.impact-container {
+  background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_world_bg.png); }
+
+.stat-row {
+  padding: 1.5rem; }
+  .stat-row div {
+    color: white;
+    font-size: 1em; }
+  .stat-row .stat-header {
+    display: block;
+    font-weight: bold; }
+  .stat-row .stat-large span {
+    font-size: 2em; }
+  .stat-row .stat-medium span {
+    font-size: 1.5em; }
+  .stat-row .stat-small span {
+    font-size: 1.2em; }
+
+.stat-row.childhood {
+  background: rgba(16, 22, 127, 0.6); }
+
+.stat-row.youth {
+  background: rgba(124, 129, 184, 0.6); }
+
+.stat-row.income {
+  background: rgba(254, 35, 10, 0.6); }
+
+.stat-row.health {
+  background: rgba(255, 150, 0, 0.6); }
+
+
+
+/*===== GCL Grid =====*/
+
+#gcl-grid {
+    background: rgba(0,0,0,.7);
+}
+
+#gcl-grid div {
+    padding: 2em 0;
+    color: white;
+}
+
+#gcl-accordion li a {
+    margin: 2em 0;
+    font-size: 1.5em;
+}
+
+#gcl-accordion .menu.nested {
+    margin-left: 0;
+}
+
+
+/* nested menu arrow */
+.is-accordion-submenu-parent>a:after {
+    right: 10%;
+}
+
+@media only screen and (min-width: 40em){
+    .is-accordion-submenu-parent>a:after {
+        right:50%;
+    } 
+}
+
+
+@media only screen and (min-width: 64em){
+    .is-accordion-submenu-parent>a:after {
+        right:75%;
+    }
+    
+}
+
+
