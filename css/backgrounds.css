@@ -104,12 +104,10 @@ Background Image Styles
 
 #childhood-success {
     background: linear-gradient(to top right,rgba(16,22,127, 1),rgba(16,22,127,.3) 100%);
-    /*background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_childhood_bg.png);*/
 }
 
 #youth-success {
-  background: linear-gradient(to top left,rgba(124,129,184, 1),rgba(124,129,184,.3) 100%);
-     /* background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_youth_bg.png);*/
+    background: linear-gradient(to top left,rgba(124,129,184, 1),rgba(124,129,184,.3) 100%);
 }
 
 #economic-mobility {

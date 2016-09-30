@@ -131,14 +131,14 @@ Special Element Styles
 
 @media only screen and (min-width: 40em){
     .is-accordion-submenu-parent>a:after {
-        right:50%;
+        right:40%;
     } 
 }
 
 
 @media only screen and (min-width: 64em){
     .is-accordion-submenu-parent>a:after {
-        right:75%;
+        right:65%;
     }
     
 }
