@@ -144,3 +144,11 @@ Special Element Styles
 }
 
 
+/*==== Board Grids====*/
+
+#usa-board-grid div p i,
+#worldwide-board-grid div p i{
+    font-size: .9em
+}
+
+
