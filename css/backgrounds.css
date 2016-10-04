@@ -59,7 +59,7 @@ Background Image Styles
 .underlay {
     background: rgba(0,0,0,.7);
     padding: 2em;
-    margin: 20% auto;
+    margin: 10% auto;
 }
 
 .underlay-text{ 
@@ -83,6 +83,11 @@ Background Image Styles
     background-size: cover;
 }
 
+
+.callout.large.background-image {
+    height: 100%;
+    width: 100%;
+}
 
 /* styles for dark backgrounds */
 
