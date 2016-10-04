@@ -28,7 +28,6 @@ a:hover{
     display: table;
     width: 100%;
     border: 8px solid #fff;
-    margin-top: -8px;
 }
 
 .row {
@@ -175,7 +174,6 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
     border-bottom: 12px solid white;
     border-radius: 0;
     background-color: whitesmoke;
-    background-attachment: fixed;
     margin: 0;
 }
 
@@ -415,18 +413,20 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
 @media only screen and (max-width: 40em){
 
     .callout.large {
-        padding: .5rem;
-        background-attachment: scroll;
+        padding: .3rem;
     }
     
     .callout.large>:first-child {
         margin-top: 1rem;
     }
     
+    .callout.large.background-image{
+        background-attachment: scroll;
+    }
+    
     .js-dropdown-active li {
         background: rgba(0,0,0,1);
     }
     
-    .top-
 
 }
