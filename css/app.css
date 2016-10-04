@@ -323,9 +323,7 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
 /* modal */
 
     .reveal {
-        max-height: 90%;
         padding-top: 4em;
-        opacity: .9;
         overflow: scroll;
     }
 
@@ -374,6 +372,12 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
         display:none!important;
     }
     
+    .reveal{
+        max-height: 90%;
+        padding-top: 4em;
+        opacity: .9;
+    }
+    
     .image-touts--four .image-touts__tout:hover:before {
         height: 100%;
     }
@@ -412,7 +416,7 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
 @media only screen and (max-width: 40em){
 
     .callout.large {
-        padding: 1rem;
+        padding: .5rem;
         background-attachment: scroll;
     }
     
