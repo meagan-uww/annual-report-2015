@@ -17,20 +17,66 @@
     </head>
     <body>
         <div class="container aos-all"> 
-           <nav class="contain-to-grid fixed main-nav" data-animation-in="fade-in" data-animation-out="fade-out">
-               
-            <div>
+           <nav class="contain-to-grid fixed main-nav">
                 <div class="top-bar">
-                  <div class="top-bar-title">
-                    <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-                        <button class="menu-icon light" type="button" data-toggle></button>
-                        <strong class="menu-text">Annual Report 2016</strong>
-                    </span>
-                  </div>
-                  <div id="responsive-menu">
+                      <div class="top-bar-title">
+                        <span data-responsive-toggle="accordion-menu" data-hide-for="medium">
+                            <img src="https://www.unitedway.org/assets/img/logo.svg" alt="United Way Logo" id="mobile-logo">
+                            <strong class="menu-text">Annual Report 2016</strong>
+                            <button class="menu-icon light" type="button" id="hamburger" data-toggle></button>
+                        </span>
+                      </div>
+                    <div id="accordion-menu">
+                        <div class="top-bar-left">
+                          <ul class="vertical medium-horizontal dropdown menu">
+                            <li class="menu">
+                               <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+                                  <li class="accordion-item" data-accordion-item>
+                                    <a href="#" class="accordion-title">Impact</a>
+                                    <div class="accordion-content" data-tab-content><a href="#childhood-success">Childhood Success</a></div>
+                                    <div class="accordion-content" data-tab-content><a href="#youth-success">Youth Success</a></div>
+                                    <div class="accordion-content" data-tab-content><a href="#economic-mobility">Economic Mobility</a></div>
+                                    <div class="accordion-content" data-tab-content><a href="#access-to-health">Access to Health</a></div> 
+                                    <div class="accordion-content" data-tab-content><a href="#measure-of-a-society">Measure of a Society</a></div>
+                                    <div class="accordion-content" data-tab-content><a href="#katrina">Hurricane Katrina: 10 Years Later</a></div>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="menu">
+                               <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+                                  <li class="accordion-item" data-accordion-item>
+                                    <a href="#" class="accordion-title">Partnerships</a>
+                                    <div class="accordion-content" data-tab-content><a href="#gcl">Our Corporate Partners</a></div>
+                                    <div class="accordion-content" data-tab-content><a href="#NFL">NFL</a></div>
+                                    <div class="accordion-content" data-tab-content><a href="#labor">Labor</a></div>
+                                  </li>
+                                </ul>
+                              </li>                 
+                            <li><a href="#hero-effect">The Hero Effect</a></li>
+
+                            <li class="menu">
+                               <ul class="accordion" data-accordion data-allow-all-closed="true">
+                                  <li class="accordion-item" data-accordion-item>
+                                    <a href="#" class="accordion-title">People</a>
+                                    <div class="accordion-content" data-tab-content><a href="#beneficiaries">Who We Fight For</a></div>
+                                    <div class="accordion-content" data-tab-content><a href="#donors">Our Donors</a></div>
+                                    <div class="accordion-content" data-tab-content><a href="#volunteers">Our Volunteers</a></div>
+                                    <div class="accordion-content" data-tab-content><a href="#usa-board">USA Board</a></div>
+                                    <div class="accordion-content" data-tab-content><a href="#worldwide-board">Worldwide Board</a></div>
+                                  </li>
+                                </ul>
+                              </li> 
+                          </ul>
+                        </div>
+                        <div class="top-bar-right">
+                          <ul class="menu">
+                            <li><a href="https://www.unitedway.org/">Back to United Way ></a></li> 
+                          </ul>
+                        </div> 
+                    </div>
+                  <div id="vertical-menu">
                     <div class="top-bar-left">
                       <ul class="vertical medium-horizontal dropdown menu" data-dropdown-menu>
-                        
                         <li><img src="https://www.unitedway.org/assets/img/logo.svg" alt="United Way Logo" id="logo"></li>
                         <li class="is-dropdown-submenu-parent">
                           <a href="#at-a-glance">Impact</a>
@@ -66,11 +112,10 @@
                     </div>
                     <div class="top-bar-right">
                       <ul class="menu">
-                        <li><a href="http://www.unitedway.org/">Back to United Way ></a></li> 
+                        <li><a href="https://www.unitedway.org/">Back to United Way ></a></li> 
                       </ul>
                     </div>
                   </div>
-                </div>
                </div>
             </nav>
             <section class="main-content">
@@ -236,15 +281,15 @@
                             </div>
                             <div class="image-touts image-touts--four">
     
-                                <a href="https://www.unitedway.org/preview/our-impact/stories/ar-childhood-success#columbus" target="_blank" class="image-touts__tout" style="background-image:url(http://s3.amazonaws.com/uww.assets/site/uww-photo/health/healthimages20040130_0003.jpg);">
+                                <a href="https://www.unitedway.org/preview/our-impact/stories/ar-childhood-success#columbus" target="_blank" class="image-touts__tout" style="background-image:url(https://s3.amazonaws.com/uww.assets/site/uww-photo/health/healthimages20040130_0003.jpg);">
                                     <span class="image-touts__text">Early Screenings</span>
                                 </a>
 
-                                <a href="https://www.unitedway.org/preview/our-impact/stories/ar-childhood-success#brazil" target="_blank" class="image-touts__tout" style="background-image:url(http://s3.amazonaws.com/uww.assets/site/uw_health_0033.jpg);">
+                                <a href="https://www.unitedway.org/preview/our-impact/stories/ar-childhood-success#brazil" target="_blank" class="image-touts__tout" style="background-image:url(https://s3.amazonaws.com/uww.assets/site/uw_health_0033.jpg);">
                                     <span class="image-touts__text">Home Visits</span>
                                 </a>
 
-                                <a href="https://www.unitedway.org/preview/our-impact/stories/ar-childhood-success#indianapolis" target="_blank" class="image-touts__tout" style="background-image:url(http://s3.amazonaws.com/uww.assets/site/images/blog/eduimages20100219_0084_2.JPG);">
+                                <a href="https://www.unitedway.org/preview/our-impact/stories/ar-childhood-success#indianapolis" target="_blank" class="image-touts__tout" style="background-image:url(https://s3.amazonaws.com/uww.assets/site/images/blog/eduimages20100219_0084_2.JPG);">
                                     <span class="image-touts__text">Quality Child Care</span>
                                 </a>
 
@@ -330,11 +375,11 @@
                                     <span class="image-touts__text">Tuberculosis Treatment</span>
                                 </a>
 
-                                <a href="https://www.unitedway.org/preview/our-impact/stories/ar-access-to-health#washington-dc" target="_blank" class="image-touts__tout" style="background-image:url(http://s3.amazonaws.com/uww.assets/site/images/blog/YouthFitness_20091006_0054.jpg);">
+                                <a href="https://www.unitedway.org/preview/our-impact/stories/ar-access-to-health#washington-dc" target="_blank" class="image-touts__tout" style="background-image:url(https://s3.amazonaws.com/uww.assets/site/images/blog/YouthFitness_20091006_0054.jpg);">
                                     <span class="image-touts__text">Youth Fitness</span>
                                 </a>
 
-                                <a href="https://www.unitedway.org/preview/our-impact/stories/ar-access-to-health#chicago" target="_blank" class="image-touts__tout" style="background-image:url(http://s3.amazonaws.com/uww.assets/site/images/blog/healthimages20051227_0004.jpg);">
+                                <a href="https://www.unitedway.org/preview/our-impact/stories/ar-access-to-health#chicago" target="_blank" class="image-touts__tout" style="background-image:url(https://s3.amazonaws.com/uww.assets/site/images/blog/healthimages20051227_0004.jpg);">
                                     <span class="image-touts__text">Health Insurance</span>
                                 </a>
 
@@ -587,7 +632,7 @@
                     <div class="callout large vertical-center background-image full-screen-height underlay-container" id="NFL">
                         <div class="row column text-center">
                             <div class="underlay">
-                                <h1 class="aos-item slide-header" data-aos="fade-in">Partner Spotlight: <img src="http://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_nfl-shield.png" alt="NFL Shield" width="20%"/></h1>
+                                <h1 class="aos-item slide-header" data-aos="fade-in">Partner Spotlight: <img src="https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_nfl-shield.png" alt="NFL Shield" width="10%"/></h1>
                                 <div class="aos-item slide-text" data-aos="fade-in" data-aos-delay="400">
                                     <h2>The NFL and United Way are collaborating on Character Playbook<sup>TM</sup>, a digital curriculum for middle school students that teaches them to build healthy relationships.</h2>
                                      <p class="text-center"><a href="https://unitedway.org/preview/blog/nfl-partnership" target="_blank" class="cta__link button ghost">Read about the Program</a>
@@ -639,12 +684,26 @@
                         </div>
                     </div>
                     
-                    <div class="callout large" id="donors">
+                     <div class="callout large background-image full-screen-height underlay-container dark" id="donors">
                         <div class="row column text-left">
-                            <h1 class="aos-item slide-header text-center" data-aos="fade-in">Our Donors</h1>
+                            <div class="underlay">
+                                <div class="underlay-text">
+                                    <h1 class="aos-item slide-header text-center" data-aos="fade-in">Our Donors</h1>
+                                    <div class="aos-item slide-text" data-aos="fade-in" data-aos-delay="400">
+                                        <h2>If you have ever given to United Way - be it a donation of $1 or $1 million - you have helped to create change that will endure, and grow, and lift up people across the globe.</h2>
+                                        <p>In 2015, more than XXX donors contributed to United Way's mission of building stronger communities. Together, we make up a larger community that transcends borders. We are a community where every member's contribution - great or small - makes a world of difference, and each of us gets to leave our fingerprints on a legacy of change that will endure long after we're gone.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="callout large" id="leadership-donors">
+                        <div class="row column text-left">
+                            <h1 class="aos-item slide-header text-center" data-aos="fade-in">Leadership Donors</h1>
                             <div class="aos-item slide-text" data-aos="fade-in" data-aos-delay="400">
-                                <h2>If you have ever given to United Way - be it a donation of $1 or $1 million - you have helped to create change that will endure, and grow, and lift up people across the globe.</h2>
-                                <p>In 2015, more than XXX donors contributed to United Way's mission of building stronger communities. Together, we make up a larger community that transcends borders. We are a community where every member's contribution - great or small - makes a world of difference, and each of us gets to leave our fingerprints on a legacy of change that will endure long after we're gone.</p>
+                                <h2>Lorem Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
 
                                  <div class="image-touts image-touts--four">
 
@@ -659,7 +718,7 @@
 
                                         <p>Mr. Ng is the chairman and CEO of East West Bank* and has been a member of the corporate board of United Way of Greater Los Angeles for more than a decade. His vision and passion have positively influenced the diversity of services and philanthropic endeavors of United Way.</p>
 
-                                        <p>As the first Asian-American chair of the United Way campaign, Mr. Ng steered <a href="http://www.unitedwayla.org/" target="_blank">United Way of Greater Los Angeles</a> in raising a record $66 million in 2000-2001. He increased the number of Chinese-American donors and encouraged a different approach to building stronger communities by funding smaller, minority-serving agencies. In 2008, he helped create the "quality of life index", a crucial tool for better assessing the challenges that Los Angeles residents face and developing lasting solutions to the challenges.</p>
+                                        <p>As the first Asian-American chair of the United Way campaign, Mr. Ng steered <a href="https://www.unitedwayla.org/" target="_blank">United Way of Greater Los Angeles</a> in raising a record $66 million in 2000-2001. He increased the number of Chinese-American donors and encouraged a different approach to building stronger communities by funding smaller, minority-serving agencies. In 2008, he helped create the "quality of life index", a crucial tool for better assessing the challenges that Los Angeles residents face and developing lasting solutions to the challenges.</p>
 
                                         <p>Under Mr. Ng's leadership, East West Bank has also raised millions of dollars for United Way of Greater Los Angeles' "Creating Pathways Out of Poverty" initiative, which helps individuals and families get on more solid financial ground. Through this initiative, <strong>half of the 3,000 adults who completed classes on financial education improved their financial habits</strong> within six months and over <strong>44,000 individuals and families filed free tax returns</strong> under the Volunteer Income Tax Assistance Program.</p>
 
@@ -669,7 +728,7 @@
 
 
 
-                                    <a data-open="the-siemers" class="image-touts__tout" style="background-image:url(http://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_Siemers2.jpeg);" alt="Al and Barbara Siemer">
+                                    <a data-open="the-siemers" class="image-touts__tout" style="background-image:url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_siemers3.jpeg);" alt="Al and Barbara Siemer">
                                        <span class="image-touts__text">Al &amp; Barbara Siemer</span>
                                     </a>
 
@@ -680,7 +739,7 @@
 
                                         <p>When families are able to stay in their homes, children are more likely to achieve success in school and life. Al and Barbara Siemer have demonstrated a longstanding commitment to helping families stay in their homes, reducing disruptions to the lives and education of children, and empowering families to get on more stable financial ground. For their devotion to this cause, they were awarded the 2012 United Way Tocqueville Award.</p>
 
-                                        <p>In 1984, Barbara and Al became major supporters of <a href="https://liveunitedcentralohio.org/" target="_blank">United Way of Central Ohio</a>, in their home community of Columbus, Ohio. When Sarasota, Florida became their second home community, they immediately became involved with <a href="http://unitedwaysuncoast.org/" target="_blank">United Way of Sarasota County</a> as active Tocqueville Society members, and in 1997 established the Siemer Family Foundation. The goal of the Foundation was to go beyond temporary fixes for social challenges and instead offer comprehensive solutions that will stand the test of time. It's a goal that makes them a perfect fit for United Way.</p>
+                                        <p>In 1984, Barbara and Al became major supporters of <a href="https://liveunitedcentralohio.org/" target="_blank">United Way of Central Ohio</a>, in their home community of Columbus, Ohio. When Sarasota, Florida became their second home community, they immediately became involved with <a href="https://unitedwaysuncoast.org/" target="_blank">United Way of Sarasota County</a> as active Tocqueville Society members, and in 1997 established the Siemer Family Foundation. The goal of the Foundation was to go beyond temporary fixes for social challenges and instead offer comprehensive solutions that will stand the test of time. It's a goal that makes them a perfect fit for United Way.</p>
 
                                         <p>Over the years, the Siemers became $10 Million Roundtable Members, a distinction they have earned by donating more than $10 million to United Way's mission. And yet the real measure of Al and Barbara's contribution is in the thousands of people whose lives they have changed for the better. In 2011, they founded the Siemer Institute for Family Stability (SIFS); since that time, the Institute and its partners have <strong>served 29,000 families and 58,000 children</strong>. In just the last year, 96% of families served by Siemer partners were able to avoid disruptive school moves - <strong>stabilizing more than ten thousand children in their schools and giving them better opportunities to succeed</strong>. </p>
                                       <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">&times;</span></button>
@@ -725,7 +784,7 @@
 
                                         <p>In his home state of California, his wife, Laura supported a partnership between United Way and the California Apartment Association that aims to reduce the number of homeless and housing insecure children by half in the next ten years. </p>
 
-                                        <p>Overseas, he was a founding member of <a href="http://www.unitedway.fr/en" target="_blank">United Way France</a>, which now champions the Airbus Flying Challenge, a mentoring initiative in partnership with Airbus Corporate Foundation. The initiative has now expanded to Kansas, Alabama, Spain and Germany. So far, <b>more than 1,700 students have benefited</b> from the Airbus Flying Challenge initiative.</p>
+                                        <p>Overseas, he was a founding member of <a href="https://www.unitedway.fr/en" target="_blank">United Way France</a>, which now champions the Airbus Flying Challenge, a mentoring initiative in partnership with Airbus Corporate Foundation. The initiative has now expanded to Kansas, Alabama, Spain and Germany. So far, <b>more than 1,700 students have benefited</b> from the Airbus Flying Challenge initiative.</p>
 
                                         <p><i>*Western National Group is a regional third party apartment property management company.</i></p>
 
@@ -794,7 +853,7 @@
                         <div class="row column text-left">
                             <h1 class="slide-header text-center">U.S.A Board of Trustees</h1>
                             <div class="slide-text">
-                                <div class="row medium-up-2 large-up-4 text-left" id="usa-board-grid" data-equalizer data-equalize-on="medium">
+                                <div class="row medium-up-2 large-up-4 text-left leadership-grid" data-equalizer data-equalize-on="medium">
                                     <div class="column" data-equalizer-watch><h4>Chair of the Board</h4></div>
                                     <div class="column" data-equalizer-watch>
                                         <p>
@@ -816,7 +875,9 @@
                                             <i>Executive Vice President, Director of Government and Community Relations<br/>Wells Fargo and Company<br/>Wayzata, Minnesota</i>
                                         </p>
                                     </div>
-                                    <div class="column" data-equalizer-watch><h4>AT-LARGE BOARD MEMBERS</h4></div>
+                                </div>
+                                <div class="row column" data-equalizer-watch><h4>AT-LARGE BOARD MEMBERS</h4></div>
+                                <div class="row medium-up-2 large-up-4 text-left leadership-grid" data-equalizer data-equalize-on="medium">
                                     <div class="column" data-equalizer-watch>
                                         <p>
                                         <b>Nnamdi Asomugha</b><br/>
@@ -907,13 +968,13 @@
                                             <i>Director, Diversity and Language Services<br/>AnMed Health<br/>Anderson, South Carolina</i>
                                         </p>
                                     </div>
-                                    <div class="column" data-equalizer-watch><h4>EMERITUS BOARD MEMBER</h4></div>
-                                    <div class="column" data-equalizer-watch>
-                                        <p>
-                                        <b>William H. Gates, Sr.</b><br/>
-                                            <i>Co-Chair<br/>Bill and Melinda Gates Foundation<br/>Seattle, Washington</i>
-                                        </p>
-                                    </div>
+                                </div>
+                                <div class="row column">
+                                    <h4>EMERITUS BOARD MEMBER</h4>
+                                    <p>
+                                    <b>William H. Gates, Sr.</b><br/>
+                                        <i>Co-Chair<br/>Bill and Melinda Gates Foundation<br/>Seattle, Washington</i>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -922,7 +983,7 @@
                         <div class="row column text-left">
                             <h1 class="slide-header text-center">Worldwide Board of Trustees</h1>
                             <div class="slide-text">
-                                <div class="row medium-up-2 large-up-4 text-left" id="worldwide-board-grid" data-equalizer data-equalize-on="medium">
+                                <div class="row medium-up-2 large-up-4 text-left leadership-grid" data-equalizer data-equalize-on="medium">
                                     <div class="column" data-equalizer-watch><h4>Chair of the Board</h4></div>
                                     <div class="column" data-equalizer-watch>
                                         <p>
@@ -985,8 +1046,10 @@
                                         <b>John J. Dooner, Jr.</b><br/>
                                             <i>Chairman<br/>The Dooner Group<br/>New York, New York</i>
                                         </p>
-                                    </div>
-                                    <div class="column" data-equalizer-watch><h4>AT-LARGE BOARD MEMBERS</h4></div>
+                                    </div>   
+                                </div>
+                                <div class="row column" data-equalizer-watch><h4>AT-LARGE BOARD MEMBERS</h4></div>
+                                <div class="row medium-up-2 large-up-4 text-left leadership-grid" data-equalizer data-equalize-on="medium">
                                     <div class="column" data-equalizer-watch>
                                         <p>
                                         <b>James Bullard</b><br/>

@@ -24,7 +24,7 @@ Background Image Styles
 
 /* creating an overlay */
 .overlay:before {
-    background: rgba(0,0,0,.7);
+    background: rgba(0,0,0,.5);
     bottom: 0;
     content: '';
     display: block;

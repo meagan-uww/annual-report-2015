@@ -37,6 +37,16 @@ a:hover{
 
 /*======== Nav / title bar =========*/
 
+.top-bar-title{
+    width: 100%;   
+}
+
+#hamburger {
+    border-radius: 0;
+    float: right;
+    margin-top: .3rem;
+}
+
 .main-nav{
     position: fixed; 
     display: block; 
@@ -55,13 +65,50 @@ a:hover{
     background-color: transparent;
 }
 
-.title-bar, .top-bar, .top-bar ul.submenu{
+.top-bar, .top-bar ul.submenu, .accordion-content{
     background: rgba(0,0,0,.7);
     border: none;
 }
 
+
+#vertical-menu {
+    display: none;
+}
+
+.accordion-title {
+    border: 0;
+    font-size: 1em;
+}
+
+:last-child:not(.is-active)>.accordion-title {
+    border-bottom: 0;
+    border-radius: 0;
+}
+
+.accordion-title:focus, .accordion-title:hover {
+    background: transparent;
+}
+
+.accordion-content {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    margin-left: 1em;
+}
+
+:last-child>.accordion-content:last-child {
+    border-bottom: 0;
+}
+
+
+
+
 #logo {
-    display:none;
+    display:none;   
+}
+
+#mobile-logo {
+    width: 75px;
 }
 
 
@@ -319,6 +366,14 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
         margin-top: 25%;
     }
     
+    #vertical-menu {
+        display: block;
+    }
+    
+    #accordion-menu {
+        display:none!important;
+    }
+    
     .image-touts--four .image-touts__tout:hover:before {
         height: 100%;
     }
@@ -330,7 +385,6 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
     #logo {
         display: block;
         width: 100px;
-        margin-right: 2em;
     }
     
     .orbit-previous, .orbit-next {
@@ -359,6 +413,7 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
 
     .callout.large {
         padding: 1rem;
+        background-attachment: scroll;
     }
     
     .callout.large>:first-child {
@@ -368,5 +423,7 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
     .js-dropdown-active li {
         background: rgba(0,0,0,1);
     }
+    
+    .top-
 
 }
