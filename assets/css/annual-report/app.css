@@ -27,7 +27,7 @@ a:hover{
     position: relative;
     display: table;
     width: 100%;
-    border: 8px solid #fff;
+    /*border: 8px solid #fff;*/
 }
 
 .row {
@@ -140,16 +140,16 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
 
 /*======== Cover ===========*/
 
-.callout.primary{
-    background: #10167f center center no-repeat;
+callout.primary{
+   /*. background: #10167f center center no-repeat;
     background-size: cover;
-    position: relative;
+    position: relative;*/
 }
 
 #title{
-    position: absolute;
+    /*position: absolute;
     bottom: 2em;
-    right: 2em;
+    right: 2em;*/
 }
 
 #title h1{
@@ -417,7 +417,7 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
     }
     
     .callout.large>:first-child {
-        margin-top: 1rem;
+        padding-top: 1rem;
     }
     
     .callout.large.background-image{
