@@ -95,6 +95,16 @@ Background Image Styles
     padding: 0 2rem!important;
 }
 
+/*cover background */
+
+#cover .cta-component{
+    background-color: #163F6F;
+}
+#cover .cta-component--image:before {
+    background: #163F6F;
+}
+
+
 /* styles for dark backgrounds */
 
 .dark h1, .dark h2, .dark h3, .dark p {
@@ -157,34 +167,27 @@ Background Image Styles
 }
 
 #volunteers {
-    background-image: url(../img/uw_studentunitedway.gif);
+    background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/uw_studentunitedway.gif);
 }
 
-
-
-video#who-we-fight-for-video { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
-    background-size: cover; 
-}
 
 @media only screen and (max-width: 40em){
-    #cover {
-        background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_coverart.png);
-        background-attachment: initial;
+    #cover .cta-component--image:before {
+        background: none;
     }
-    #cover video {
+
+    #cover .cta-component {
+        background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_coverart.png);
+    }
+
+    #cover video, #beneficiaries video {
         display: none;
     }
+
+    #beneficiaries .cta-component{
+        background-image: url(http://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_who-we-fight-for.png);
+         background-attachment: scroll;
+         height:400px;
     }
+
+}
