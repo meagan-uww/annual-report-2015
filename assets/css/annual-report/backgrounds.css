@@ -85,6 +85,16 @@ Background Image Styles
 }
 
 
+/* background-video */
+
+.callout.large.background-video {
+    padding: 0;
+}
+
+.background-video section div div {
+    padding: 0 2rem!important;
+}
+
 /* styles for dark backgrounds */
 
 .dark h1, .dark h2, .dark h3, .dark p {
@@ -93,11 +103,6 @@ Background Image Styles
 
 
 /* special snowflakes */
-
-#cover {
-    background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_coverart.png);
-    background-attachment: initial;
-}
 
 #CEO-letter {
     background-image: url(http://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_BAG_bg.png);
@@ -156,4 +161,12 @@ Background Image Styles
 }
 
 
-
+@media only screen and (max-width: 40em){
+    #cover {
+        background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_coverart.png);
+        background-attachment: initial;
+    }
+    #cover video {
+        display: none;
+    }
+    }

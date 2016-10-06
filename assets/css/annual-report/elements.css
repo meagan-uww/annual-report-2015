@@ -90,16 +90,16 @@ Special Element Styles
     font-size: 1.2em; }
 
 .stat-row.childhood {
-  background: rgba(16, 22, 127, 0.6); }
+  background: rgba(16, 22, 127, 1); }
 
 .stat-row.youth {
-  background: rgba(124, 129, 184, 0.6); }
+  background: rgba(124, 129, 184, 1); }
 
 .stat-row.income {
-  background: rgba(254, 35, 10, 0.6); }
+  background: rgba(254, 35, 10, 1); }
 
 .stat-row.health {
-  background: rgba(255, 150, 0, 0.6); }
+  background: rgba(255, 150, 0, 1); }
 
 
 
