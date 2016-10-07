@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Annual Report 2015</title>
-        <link rel="stylesheet" href="assets/css/annual-report/foundation.min.css">
+        <link rel="stylesheet" href="/assets/css/annual-report/foundation.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/annual-report/aos.css"/>
         <link rel="stylesheet" type="text/css" href="assets/css/annual-report/uwwstyles.css"/>
         <link rel="stylesheet" type="text/css" href="assets/css/annual-report/app.css"/>
@@ -15,7 +15,6 @@
         <script type="text/javascript" src="//fast.fonts.net/jsapi/215f472d-d6ab-4348-ad14-4ec5287646f3.js"></script>
        
     </head>
-    
     <body>
         <div class="container aos-all"> 
            <nav class="contain-to-grid fixed main-nav">
@@ -34,6 +33,7 @@
                                <ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
                                   <li class="accordion-item" data-accordion-item>
                                     <a href="#" class="accordion-title">Impact</a>
+                                    <div class="accordion-content" data-tab-content><a href="#beneficiaries">Who We Fight For</a></div>
                                     <div class="accordion-content" data-tab-content><a href="#childhood-success">Childhood Success</a></div>
                                     <div class="accordion-content" data-tab-content><a href="#youth-success">Youth Success</a></div>
                                     <div class="accordion-content" data-tab-content><a href="#economic-mobility">Economic Mobility</a></div>
@@ -59,7 +59,6 @@
                                <ul class="accordion" data-accordion data-allow-all-closed="true">
                                   <li class="accordion-item" data-accordion-item>
                                     <a href="#" class="accordion-title">People</a>
-                                    <div class="accordion-content" data-tab-content><a href="#beneficiaries">Who We Fight For</a></div>
                                     <div class="accordion-content" data-tab-content><a href="#donors">Our Donors</a></div>
                                     <div class="accordion-content" data-tab-content><a href="#volunteers">Our Volunteers</a></div>
                                     <div class="accordion-content" data-tab-content><a href="#usa-board">USA Board</a></div>
@@ -82,6 +81,7 @@
                         <li class="is-dropdown-submenu-parent">
                           <a href="#at-a-glance">Impact</a>
                           <ul class="menu vertical">
+                            <li><a href="#beneficiaries">Who We Fight For</a></li>
                             <li><a href="#childhood-success">Childhood Success</a></li>
                             <li><a href="#youth-success">Youth Success</a></li>
                             <li><a href="#economic-mobility">Economic Mobility</a></li>
@@ -102,7 +102,6 @@
                         <li class="is-dropdown-submenu-parent">
                             <a href="#">People</a>
                             <ul class="menu">
-                                <li><a href="#beneficiaries">Who We Fight For</a></li>
                                 <li><a href="#donors">Our Donors</a></li>
                                 <li><a href="#volunteers">Our Volunteers</a></li>
                                 <li><a href="#usa-board">USA Board</a></li>
@@ -126,8 +125,8 @@
 
                     <div class="callout large primary full-screen-height background-video background-video" id="cover">
                     
-                        <section class="full-screen-height cta-component  cta-component--video-section cta-54884 cta-component--full-width cta-component--image">
-                                <video class="cta-component__video" autoplay poster="https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_coverart.png" id="who-we-fight-for-video">
+                        <section class="full-screen-height cta-component cta-component--video-section cta-54884 cta-component--full-width cta-component--image">
+                                <video class="cta-component__video" autoplay poster="https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_coverart.png" id="cover-art">
                                     <source src="http://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_coverart.mp4" type="video/mp4">
                                 </video>
                                 <!--<script>var vid = document.getElementById('cta-video__entry-54884'); if(vid && vid.play){vid.play();}</script>-->
@@ -158,8 +157,27 @@
                                 <h2>In 2015, we impacted millions of lives across more than 40 countries and territories worldwide.</h2>
                                 
                                 
-                                <a data-open="CEOModal" class="cta__link button ghost white-outline">Read the letter</a>
+                            
+                                  <div class="row">
+                                    <div class="medium-4 columns"> <a data-open="CEOModal" class="cta__link button ghost white-outline">Read the letter</a></div>
+                                    <div class="medium-4 columns">
+                                        <figure class="image-component media-component has-caption">                                        
+                                            <img src="http://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_BAG.gif">
+                                            <figcaption class="media-component__caption media-component__caption--inset">                                          
+                                               <p>Brian A. Gallagher, President and CEO</p>                                               
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="medium-4 end columns">
 
+                                         <figure class="image-component media-component has-caption">
+                                            <img src="http://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_JL.gif" alt="John Lechleiter">
+                                            <figcaption class="media-component__caption media-component__caption--inset">                                             
+                                                <p>John Lechleiter, Chairman of the Board</p>                                            
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
                                
                                 
                             </div>
@@ -184,10 +202,44 @@
 
                                 <p>That's the power of community building. That's what it means to LIVE UNITED.  To all our partners, donors and volunteers, <strong>thank you for everything you do</strong>. We couldn't do it without you and your dedication to our mission.
                                 </p>
+
+                                <img src="http://s3.amazonaws.com/uww.assets/site/annual_report/2015/BAG__Lechleiter_Signatures_282_72ppi.png" alt="Signatures"/>
                                 
                                  <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">&times;</span></button>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="callout large background-video background-image dark" id="beneficiaries">
+
+                        <section class="cta-component cta-component--video-section cta-component--full-width cta-component--image">
+                            <video class="cta-component__video" autoplay="" muted="" loop="" poster="http://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_who-we-fight-for.png" id="who-we-fight-for-video">
+                                <source src="https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_who-we-fight-for.mp4" type="video/mp4">
+                            </video>
+                            <script>var vid = document.getElementById('who-we-fight-for-video'); if(vid && vid.play){vid.play();}</script>
+                            <div class="row cta-component--video-overlay">
+                                <div class="small-11 small-centered large-10 column">
+                                    <h2 class="cta__hed">Who We Fight For</h2>
+                                    <p class="cta__dek">United Way impacts the lives of nearly 50 million people every year. They are men, women and children you may never meet, and whose names you may never know. Nevertheless, in a world where local and national economies can rise and fall together, the success of every individual and community benefits us all. </p>
+                                    <a data-open="mohammad" class="cta__link button secondary">Mohammad's Story</a>
+                                    
+                                    <div id="mohammad" class="reveal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+                                        <h3 class="text-center">Mohammad's Story</h3>
+                                        <p>Meet Mohammad, his wife Rasha, and their two children, eight-year old Mahmoud and two-year old Saffa. The family came to Ottawa in July of 2015, refugees from the Syrian civil war that has forced millions like them to flee their homeland. They have survived bombings, food shortages, and treacherous river crossings. Now they are finally safe&mdash;a testament to the strength of their love for one another, and the compassion of a united community.</p>
+
+                                        <p>With support from United Way Ottawa and partners, Mohammad is working on improving his English and finding a job using his trade skills as a tailor. Most importantly, he and his wife Rasha finally have what all parents wish for: the chance to offer their children a brighter future.</p>
+
+                                        <div class="flex-video">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/O9geNMsBshI" frameborder="0" allowfullscreen></iframe>
+                                        </div>
+
+                                        <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">&times;</span></button>
+                                    </div> 
+
+
+                                </div> <!--/.column-->
+                            </div> <!--/.row-->
+                        </section>
                     </div>
                     
                     <div class="callout large" id="at-a-glance">
@@ -238,6 +290,7 @@
                             
                         </div>
                     </div>
+
                     
                 </section>
                 <section class="content" id="impact">
@@ -291,6 +344,15 @@
                             
                         </div>
                     </div>
+
+
+                     <div class="callout large" id="uw-map">
+                        <div class="row expanded column text-center">
+                            <h1 class="aos-item slide-header" data-aos="fade-in"><b>United Way</b> Around the World</h1>
+                            <img src="http://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_uw-map.jpg" style="width:100%; height: auto;"/>
+
+                        </div>
+                    </div>
                     
                     <!-- CHILDHOOD SUCCESS -->
                     
@@ -306,11 +368,11 @@
                                     <span class="image-touts__text">Early Screenings</span>
                                 </a>
 
-                                <a href="https://www.unitedway.org/preview/our-impact/stories/ar-childhood-success#brazil" target="_blank" class="image-touts__tout" style="background-image:url(https://s3.amazonaws.com/uww.assets/site/uw_health_0033.jpg);">
+                                <a href="https://www.unitedway.org/preview/our-impact/stories/ar-childhood-success#brazil" target="_blank" class="image-touts__tout" style="background-image:url(http://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_brazil.jpg);">
                                     <span class="image-touts__text">Home Visits</span>
                                 </a>
 
-                                <a href="https://www.unitedway.org/preview/our-impact/stories/ar-childhood-success#indianapolis" target="_blank" class="image-touts__tout" style="background-image:url(https://s3.amazonaws.com/uww.assets/site/images/blog/eduimages20100219_0084_2.JPG);">
+                                <a href="https://www.unitedway.org/preview/our-impact/stories/ar-childhood-success#indianapolis" target="_blank" class="image-touts__tout" style="background-image:url(http://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_indianapolis.jpg);">
                                     <span class="image-touts__text">Quality Child Care</span>
                                 </a>
 
@@ -332,7 +394,7 @@
                             </div>
                             <div class="image-touts image-touts--four">
     
-                                <a href="https://www.unitedway.org/preview/our-impact/stories/ar-youth-success#baroda-india" target="_blank" class="image-touts__tout" style="background-image:url(https://s3.amazonaws.com/uww.assets/site/computer.png);">
+                                <a href="https://www.unitedway.org/preview/our-impact/stories/ar-youth-success#baroda-india" target="_blank" class="image-touts__tout" style="background-image:url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_baroda.JPG);">
                                     <span class="image-touts__text">College Scholarships</span>
                                 </a>
 
@@ -370,7 +432,7 @@
                                     <span class="image-touts__text">Financial Coaching</span>
                                 </a>
 
-                                <a href="https://www.unitedway.org/preview/our-impact/stories/ar-economic-mobility#mission-united" target="_blank" class="image-touts__tout" style="background-image:url(https://s3.amazonaws.com/uww.assets/site/mission_united_1.jpg);">
+                                <a href="https://www.unitedway.org/preview/our-impact/stories/ar-economic-mobility#mission-united" target="_blank" class="image-touts__tout" style="background-image:url(http://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_mission-united.jpeg);">
                                     <span class="image-touts__text">Veterans Services</span>
                                 </a>
 
@@ -404,7 +466,7 @@
                                     <span class="image-touts__text">Health Insurance</span>
                                 </a>
 
-                                <a href="https://www.unitedway.org/preview/our-impact/stories/ar-access-to-health#portland" target="_blank" class="image-touts__tout" style="background-image:url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_access_to_health3.png);">
+                                <a href="https://www.unitedway.org/preview/our-impact/stories/ar-access-to-health#portland" target="_blank" class="image-touts__tout" style="background-image:url(http://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_healthy-eating.JPG);">
                                     <span class="image-touts__text">Healthy Eating</span>
                                 </a>
                             </div>
@@ -454,13 +516,13 @@
                     
                      
                 </section>
-                <section class="content" id="partners-and-programs" data-magellan-target="partners-and-programs">
+                <section class="content" id="partnerships">
                     
                    
                     
                     
                     
-                    <div class="callout large overlay" id="gcl">
+                    <div class="callout large overlay background-image"id="gcl">
                         <div class="row column">
                             <h1 class="aos-item slide-header text-center" data-aos="fade-in">Our Corporate Partners</h1>
                             <div class="aos-item slide-text text-left" data-aos="fade-in" data-aos-delay="400">
@@ -647,20 +709,26 @@
 
                         </div>
                     </div>
-                    
-                    
-                    
-                    <div class="callout large vertical-center background-image full-screen-height underlay-container" id="NFL">
-                        <div class="row column text-center">
-                            <div class="underlay">
-                                <h1 class="aos-item slide-header" data-aos="fade-in">Partner Spotlight: <img src="https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_nfl-shield.png" alt="NFL Shield" width="10%"/></h1>
-                                <div class="aos-item slide-text" data-aos="fade-in" data-aos-delay="400">
-                                    <h2>The NFL and United Way are collaborating on Character Playbook<sup>TM</sup>, a digital curriculum for middle school students that teaches them to build healthy relationships.</h2>
-                                     <p class="text-center"><a href="https://unitedway.org/preview/blog/nfl-partnership" target="_blank" class="cta__link button ghost">Read about the Program</a>
-                                </div>
-                            </div>
-                        </div>
+
+
+                    <div class="callout large background-video background-image dark" id="nfl">
+
+                        <section class="cta-component cta-component--video-section cta-component--full-width cta-component--image">
+                            <video class="cta-component__video" autoplay="" muted="" loop="" poster="http://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_NFL-screenshot.png" id="NFL-video">
+                                <source src="http://s3.amazonaws.com/uww.assets/site/annual_report/2015/NFL_FST.mp4">
+                            </video>
+                            <script>var vid = document.getElementById('NFL-video'); if(vid && vid.play){vid.play();}</script>
+                            <div class="row cta-component--video-overlay">
+                                <div class="small-11 small-centered large-10 column">
+                                    <h2 class="cta__hed">Partner Spotlight: <img src="https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_nfl-shield.png" alt="NFL Shield" width="15%"/></h2>
+                                    <p class="cta__dek">The NFL and United Way are collaborating on Character Playbook<sup>TM</sup>, a digital curriculum that trains students on how to cultivate and maintain healthy relationships during their critical middle school years. </p>
+                                    <a href="https://unitedway.org/preview/blog/nfl-partnership" target="_blank" class="cta__link button ghost">Read about the Program</a>
+
+                                </div> <!--/.column-->
+                            </div> <!--/.row-->
+                        </section>
                     </div>
+                    
                     
                     <div class="callout large vertical-center full-screen-height background-image underlay-container" id="labor">
                         <div class="row column text-left">
@@ -686,7 +754,7 @@
                 
                 
                 
-                <section class="content" id="people" programs-and-partners="people">   
+                <section class="content" id="people">   
                    
                     <div class="callout large background-image full-screen-height underlay-container dark" id="hero-effect">
                         <div class="row column text-left">
@@ -724,8 +792,7 @@
                             <h1 class="aos-item slide-header text-center" data-aos="fade-in">Philanthropic Leaders</h1>
                             <div class="aos-item slide-text" data-aos="fade-in" data-aos-delay="400">
                                 <h2>United Way recognizes the extraordinary generosity of these philanthropic leaders. With their support, we are improving millions of lives around the world.</h2>
-                        
-
+                                
                                  <div class="image-touts image-touts--four">
 
                                     <a data-open="dominic-ng" class="image-touts__tout" style="background-image:url(https://www.unitedway.org/i/DominicNg.jpg/@mx_385);" alt="Dominic Ng">
@@ -818,96 +885,7 @@
                         </div>
                     </div>
                     
-                    <div class="callout large background-video background-image dark" id="beneficiaries">
-
-                        <section class="cta-component cta-component--video-section cta-component--full-width cta-component--image">
-                            <video class="cta-component__video" autoplay="" muted="" loop="" poster="http://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_who-we-fight-for.png" id="who-we-fight-for-video">
-                                <source src="https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_who-we-fight-for.mp4" type="video/mp4">
-                            </video>
-                            <script>var vid = document.getElementById('who-we-fight-for-video'); if(vid && vid.play){vid.play();}</script>
-                            <div class="row cta-component--video-overlay">
-                                <div class="small-11 small-centered large-10 column">
-                                <h2 class="cta__hed">Who We Fight For</h2>
-                                <p class="cta__dek">United Way impacts the lives of nearly 50 million people every year. They are men, women and children you may never meet, and whose names you may never know. Nevertheless, in a world where local and national economies can rise and fall together, the success of every individual and community benefits us all. </p>
-                                <a data-open="mohammad" class="cta__link button secondary">Mohammad's Story</a>
-                                
-                                <div id="mohammad" class="reveal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
-                                    <h3 class="text-center">Mohammad's Story</h3>
-                                    <p>Meet Mohammad, his wife Rasha, and their two children, eight-year old Mahmoud and two-year old Saffa. The family came to Ottawa in July of 2015, refugees from the Syrian civil war that has forced millions like them to flee their homeland. They have survived bombings, food shortages, and treacherous river crossings. Now they are finally safe&mdash;a testament to the strength of their love for one another, and the compassion of a united community.</p>
-
-                                    <p>With support from United Way Ottawa and partners, Mohammad is working on improving his English and finding a job using his trade skills as a tailor. Most importantly, he and his wife Rasha finally have what all parents wish for: the chance to offer their children a brighter future.</p>
-
-                                    <div class="flex-video">
-                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/O9geNMsBshI" frameborder="0" allowfullscreen></iframe>
-                                    </div>
-
-                                    <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">&times;</span></button>
-                                </div> 
-
-
-                            </div> <!--/.column-->
-                        </div> <!--/.row-->
-                    </section>
-
-
-
-                        <!--<section class="cta-component  cta-component--video-section cta-54884 cta-component--full-width cta-component--image">
-						    <video class="cta-component__video" autoplay="" muted="" loop="" poster="http://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_who-we-fight-for.png" id="who-we-fight-for-video">
-						        <source src="https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_who-we-fight-for.mp4" type="video/mp4">
-						    </video>
-						    <div class="row cta-component--video-overlay">
-						        <div class="row column">
-                                    <h1 class="aos-item slide-header text-center" data-aos="fade-in">Who We Fight For</h1>
-                                    <h2>United Way impacts the lives of nearly 50 million people every year. They are men, women and children you may never meet, and whose names you may never know. Nevertheless, in a world where local and national economies can rise and fall together, the success of every individual and community benefits us all. </h2>
-
-                                    <p class="text-center"><a data-open="mohammad" class="cta__link button secondary">Mohammad's Story</a>
-                                        </p>
-
-
-                                    <div id="mohammad" class="reveal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
-                                        <h3 class="text-center">Mohammad's Story</h3>
-                                        <p>Meet Mohammad, his wife Rasha, and their two children, eight-year old Mahmoud and two-year old Saffa. The family came to Ottawa in July of 2015, refugees from the Syrian civil war that has forced millions like them to flee their homeland. They have survived bombings, food shortages, and treacherous river crossings. Now they are finally safe&mdash;a testament to the strength of their love for one another, and the compassion of a united community.</p>
-
-                                        <p>With support from United Way Ottawa and partners, Mohammad is working on improving his English and finding a job using his trade skills as a tailor. Most importantly, he and his wife Rasha finally have what all parents wish for: the chance to offer their children a brighter future.</p>
-
-                                        <div class="flex-video">
-                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/O9geNMsBshI" frameborder="0" allowfullscreen></iframe>
-                                        </div>
-
-                                         <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">&times;</span></button>
-                                    </div>
-						        </div> 
-						    </div> 
-						</section>-->
-
-
-
-
-
-
-
-                            <!--<h1 class="aos-item slide-header text-center" data-aos="fade-in">Who We Fight For</h1>
-                            <div class="aos-item slide-text" data-aos="fade-in" data-aos-delay="400">
-                                <h2>United Way impacts the lives of nearly 50 million people every year. They are men, women and children you may never meet, and whose names you may never know. Nevertheless, in a world where local and national economies can rise and fall together, the success of every individual and community benefits us all. </h2>
-
-                                <p class="text-center"><a data-open="mohammad" class="cta__link button secondary">Mohammad's Story</a>
-                                    </p>
-
-
-                                <div id="mohammad" class="reveal" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
-                                    <h3 class="text-center">Mohammad's Story</h3>
-                                    <p>Meet Mohammad, his wife Rasha, and their two children, eight-year old Mahmoud and two-year old Saffa. The family came to Ottawa in July of 2015, refugees from the Syrian civil war that has forced millions like them to flee their homeland. They have survived bombings, food shortages, and treacherous river crossings. Now they are finally safe&mdash;a testament to the strength of their love for one another, and the compassion of a united community.</p>
-
-                                    <p>With support from United Way Ottawa and partners, Mohammad is working on improving his English and finding a job using his trade skills as a tailor. Most importantly, he and his wife Rasha finally have what all parents wish for: the chance to offer their children a brighter future.</p>
-
-                                    <div class="flex-video">
-                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/O9geNMsBshI" frameborder="0" allowfullscreen></iframe>
-                                    </div>
-
-                                  <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">&times;</span></button>
-                                </div>
-                            </div>-->
-                    </div>
+                    
                     
                     
                      <div class="callout large vertical-center full-screen-height background-image underlay-container" id="volunteers">
@@ -1177,11 +1155,98 @@
                         </div>
                     </div>
                    
-                </section>   
-                    
+                </section> 
+                <section class="content" id="financials">  
+                    <div class="callout large full-screen-height" id="pie-charts">
+                        <div class="row text-center">
+                            <h1 class="slide-header text-center">Financial Highlights</h1>
+                            <div class="row financials-grid">
+                                 <div class="medium-6 columns pie-chart" id="revenue">
+                                    
+                                     <img class="pie-chart-piece aos-item" data-aos="zoom-out" src="http://s3.amazonaws.com/uww.assets/site/annual_report/2015/revenue-1.png"/>
+                                     <img class="pie-chart-piece aos-item" data-aos="zoom-out" data-aos-delay="400" src="http://s3.amazonaws.com/uww.assets/site/annual_report/2015/revenue-2.png"/>
+                                     <img class="pie-chart-piece aos-item" data-aos="zoom-out" data-aos-delay="800" src="http://s3.amazonaws.com/uww.assets/site/annual_report/2015/revenue-3.png"/>
+                                     <img class="pie-chart-piece aos-item" data-aos="zoom-out" data-aos-delay="1200" src="http://s3.amazonaws.com/uww.assets/site/annual_report/2015/revenue-4.png"/>
+                                </div>
+                                <div class="medium-6 columns pie-chart" id="expenses">
+                                    
+                                    <img class="pie-chart-piece aos-item" data-aos="zoom-out" src="http://s3.amazonaws.com/uww.assets/site/annual_report/2015/expense-1.png"/>
+                                    <img class="pie-chart-piece aos-item" data-aos="zoom-out" data-aos-delay="400" src="http://s3.amazonaws.com/uww.assets/site/annual_report/2015/expense-3.png"/>
+                                     <img class="pie-chart-piece aos-item" data-aos="zoom-out" data-aos-delay="800" src="http://s3.amazonaws.com/uww.assets/site/annual_report/2015/expense-2.png"/>                      
+                                     <img class="pie-chart-piece aos-item" data-aos="zoom-out" data-aos-delay="1200" src="http://s3.amazonaws.com/uww.assets/site/annual_report/2015/expense-4.png"/>
+                                     <img class="pie-chart-piece aos-item" data-aos="zoom-out" data-aos-delay="1600" src="http://s3.amazonaws.com/uww.assets/site/annual_report/2015/expense-5.png"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="callout large full-screen-height">                      
+                    <h1 class="slide-header text-center"></h1>
+                        <div class="table">
+                            <table id="finance-table">
+                            <thead>
+                                <tr>
+                                <th colspan="2">&nbsp;</th>
+                                <th>2015</th>
+                                <th>2014</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                             <tr><td colspan="4"><b>Assets</b></td></tr>
+                             <tr><td>&nbsp;</td><td>Current assets</td><td> 17,141 </td><td> 27,021 </td></tr>
+                             <tr><td>&nbsp;</td><td>Noncurrent assets</td><td> 67,273 </td><td> 49,158 </td></tr>
+                             <tr><td>&nbsp;</td><td>Total assets</td><td> 84,414 </td><td> 76,179 </td></tr>
+                             <tr><td colspan="4">&nbsp;</td></tr>
+                             <tr><td colspan="4"><b>Liabilities and net assets</b></td></tr>
+                             <tr><td colspan="4">Liabilities</td></tr>
+                             <tr><td>&nbsp;</td><td>Current liabilities</td><td> 17,650 </td><td> 23,407 </td></tr>
+                             <tr><td>&nbsp;</td><td>Noncurrent liabilities</td><td> 19,949 </td><td> 14,048 </td></tr>
+                             <tr><td>&nbsp;</td><td>Total liabilities</td><td> 37,599 </td><td> 37,455 </td></tr>
+                             <tr><td colspan="4">&nbsp;</td></tr>
+                             <tr><td colspan="4"><b>Net assets</b></td></tr>
+                             <tr><td>&nbsp;</td><td>Unrestricted</td><td> 22,252 </td><td> 23,260 </td></tr>
+                             <tr><td>&nbsp;</td><td>Unrestricted-Board designated</td><td> 8,484 </td><td> 926 </td></tr>
+                             <tr><td>&nbsp;</td><td>Temporarily restricted</td><td> 12,283 </td><td> 10,747 </td></tr>
+                             <tr><td>&nbsp;</td><td>Permanantly restricted</td><td> 3,795 </td><td> 3,791 </td></tr>
+                             <tr><td colspan="2"><b>Total net assets</b></td><td> 46,815 </td><td> 38,724 </td></tr>
+                             <tr><td colspan="2"><b>Total liabilities and net assets</b></td><td> 84,414 </td><td> 76,179 </td></tr>
+                             <tr><td colspan="4">&nbsp;</td></tr>
+                             <tr><td colspan="4"><b>Revenue</b></td></tr>
+                             <tr><td>&nbsp;</td><td>Membership Support, net</td><td> 28,484 </td><td> 28,648 </td></tr>
+                             <tr><td>&nbsp;</td><td>Contributions</td><td> 63,510 </td><td> 53,599 </td></tr>
+                             <tr><td>&nbsp;</td><td>Other revenue</td><td> 7,005 </td><td> 6,274 </td></tr>
+                             <tr><td>&nbsp;</td><td>Total revenue</td><td> 98,999 </td><td> 88,521 </td></tr>
+                             <tr><td colspan="4"><b>Expenses</b></td></tr>
+                             <tr><td colspan="4">Program expenses:</td></tr>
+                             <tr><td>&nbsp;</td><td>Investor Relations</td><td> 6,133 </td><td> 4,715 </td></tr>
+                             <tr><td>&nbsp;</td><td>International Donor Advised Giving</td><td> 36,147 </td><td> 33,312 </td></tr>
+                             <tr><td>&nbsp;</td><td>International Network</td><td> 5,008 </td><td> 4,885 </td></tr>
+                             <tr><td>&nbsp;</td><td>U.S. Network</td><td> 9,393 </td><td> 7,923 </td></tr>
+                             <tr><td>&nbsp;</td><td>Impact, Strategy and Innovation</td><td> 10,702 </td><td> 9,170 </td></tr>
+                             <tr><td>&nbsp;</td><td>Learning, Conferencing and Talent Management</td><td> 4,757 </td><td> 4,773 </td></tr>
+                             <tr><td>&nbsp;</td><td>Public Policy</td><td> 1,721 </td><td> 1,002 </td></tr>
+                             <tr><td>&nbsp;</td><td>Brand Strategy and Marketing</td><td> 7,164 </td><td> 5,376 </td></tr>
+                             <tr><td>&nbsp;</td><td>Campaign and Public Relations</td><td> 316 </td><td> 1,249 </td></tr>
+                             <tr><td>&nbsp;</td><td>Promotional Material Sales</td><td> 636 </td><td> 658 </td></tr>
+                             <tr><td colspan="2">Total Program Expenses</td><td> 81,977 </td><td> 73,063 </td></tr>
+                             <tr><td colspan="4">&nbsp;</td></tr>
+                             <tr><td colspan="4">Support Services:</td></tr>
+                             <tr><td>&nbsp;</td><td>General and Administrative</td><td> 4,367 </td><td> 4,525 </td></tr>
+                             <tr><td>&nbsp;</td><td>Fundraising</td><td> 3,265 </td><td> 2,641 </td></tr>
+                             <tr><td colspan="2">Total Support Services</td><td> 7,632 </td><td> 7,166 </td></tr>
+                             <tr><td colspan="4"></td></tr>
+                             <tr><td colspan="2">Total operating expenses</td><td> 89,609 </td><td> 80,229 </td></tr>
+                             <tr><td colspan="2"><b>Change in net assets from operations</b></td><td> 9,390 </td><td> 8,292 </td></tr>
+                             <tr><td colspan="2">Non-operating adjustments to net assets</td><td> (1,299)</td><td> (6,413)</td></tr>
+                             <tr><td colspan="2">Change in net assets from operations</td><td> 8,091 </td><td> 1,879 </td></tr>
+                             <tr><td colspan="2">Net assets beginning of the year</td><td> 38,724 </td><td> 36,845 </td></tr>
+                             <tr><td colspan="2"><b>Net assets end of the year</b></td><td> 46,815 </td><td> 38,724</td></tr>
+                            </tbody></table>                         
+                        </div>
+                    </div>
+                </section>     
             </section>
         </div>
-
     <script src="assets/js/annual-report/aos.js"></script>
     <script src="assets/js/annual-report/jquery.js"></script>
     <script src="assets/js/annual-report/foundation.js"></script>

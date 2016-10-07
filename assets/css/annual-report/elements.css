@@ -26,6 +26,28 @@ Special Element Styles
 }
 
 
+@media only screen and (max-width: 40em){
+   #CEOModal {
+    padding:1rem;
+   }
+
+    #CEOModal img:nth-child(2) {
+      width: 100%;
+    }
+
+}
+
+
+.image-component img{
+  max-width: 150px;
+}
+
+figcaption.media-component__caption.media-component__caption--inset {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+
 
 /*===== Overview Page =====*/
 
@@ -62,7 +84,7 @@ Special Element Styles
 
 @media only screen and (min-width: 64em){
     .overview-boxes {
-        min-height: 225px;
+        min-height: 150px;
         margin: 0;
     }
     
@@ -151,3 +173,35 @@ Special Element Styles
 }
 
 
+/*==== Pie Charts ===*/
+
+.pie-chart{
+  position: relative;
+  min-height:;
+}
+
+.pie-chart-piece {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media only screen and (max-width: 40em){
+    .pie-chart{
+      min-height: 600px;
+  }
+}
+
+
+/*===== Finace Table =======*/
+
+
+#finance-table {
+    margin: 1.25rem auto;
+  }
+
+@media only screen and (min-width: 40em){
+   #finance-table {
+    width: 85%;
+  }
+}
