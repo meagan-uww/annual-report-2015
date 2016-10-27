@@ -1,9 +1,6 @@
 /*===== 
-
 United Way Worldwide Annual Report 2015
-
 Special Element Styles
-
 =====*/
 
 
@@ -26,7 +23,7 @@ Special Element Styles
 }
 
 
-@media only screen and (max-width: 40em){
+@media screen and (max-width: 39.9375em){
    #CEOModal {
     padding:1rem;
    }
@@ -93,8 +90,6 @@ figcaption.media-component__caption.media-component__caption--inset {
 
 /*===== Impact Grid =====*/
 
-.impact-container {
-  background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_world_bg.png); }
 
 .stat-row {
   padding: 1.5rem; }
@@ -106,24 +101,6 @@ figcaption.media-component__caption.media-component__caption--inset {
     font-weight: bold; }
   .stat-row .stat-large span {
     font-size: 2em; }
-  .stat-row .stat-medium span {
-    font-size: 1.5em; }
-  .stat-row .stat-small span {
-    font-size: 1.2em; }
-
-.stat-row.childhood {
-  background: rgba(16, 22, 127, 1); }
-
-.stat-row.youth {
-  background: rgba(124, 129, 184, 1); }
-
-.stat-row.income {
-  background: rgba(254, 35, 10, 1); }
-
-.stat-row.health {
-  background: rgba(255, 150, 0, 1); }
-
-
 
 /*===== GCL Grid =====*/
 
@@ -186,9 +163,9 @@ figcaption.media-component__caption.media-component__caption--inset {
   left: 0;
 }
 
-@media only screen and (max-width: 40em){
+@media screen and (max-width: 39.9375em){
     .pie-chart{
-      min-height: 600px;
+      min-height: 500px;
   }
 }
 

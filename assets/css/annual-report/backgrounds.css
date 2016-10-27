@@ -1,28 +1,12 @@
 /*===== 
-
 United Way Worldwide Annual Report 2015
-
 Background Image Styles
-
 =====*/
 
-
-/* rotating  background-images */ 
-
-/*.callout:nth-child(1) {
-  background-color: white;
-}
-.callout:nth-child(2) {
-  background-color: lightgrey;
-}
-.callout:nth-child(3) {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/swirl_pattern.png);
-}*/
-
-
-/*overlays and underlays*/
+/*===== Overlays and Underlays =====*/
 
 /* creating an overlay */
+
 .overlay:before {
     background: rgba(0,0,0,.5);
     bottom: 0;
@@ -42,7 +26,6 @@ Background Image Styles
 
 
 /* underlay */
-
 
 .underlay-container {
     padding-left: 0!important;
@@ -74,6 +57,7 @@ Background Image Styles
     color: white;
 }
 
+/*==== Background Images/Videos ====*/
 
 /* background-image */
 
@@ -102,10 +86,10 @@ Background Image Styles
 /*cover background */
 
 #cover .cta-component{
-    background-color: #163F6F;
+    background-color: #18477d;
 }
 #cover .cta-component--image:before {
-    background: #163F6F;
+    background: #18477d;
 }
 
 
@@ -119,27 +103,27 @@ Background Image Styles
 /* special snowflakes */
 
 #CEO-letter {
-    background-image: url(http://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_BAG_bg.png);
+    background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_BAG_bg.png);
 }
 
 #childhood-success {
-    background: linear-gradient(to top right,rgba(16,22,127, 1),rgba(16,22,127,.3) 100%);
+    background: linear-gradient(to top right,rgba(16,22,127, 1),rgba(16,22,127,.5) 100%);
 }
 
 #youth-success {
-    background: linear-gradient(to top left,rgba(124,129,184, 1),rgba(124,129,184,.3) 100%);
+    background: linear-gradient(to top left,rgba(124,129,184, 1),rgba(124,129,184,.5) 100%);
 }
 
 #economic-mobility {
-    background: linear-gradient(to bottom left,rgba(254,35,10, 1),rgba(254,35,10,.3) 100%);
+    background: linear-gradient(to bottom left,rgba(254,35,10, 1),rgba(254,35,10,.5) 100%);
 }
 
 #access-to-health {
-    background: linear-gradient(to bottom right,rgba(255,150,0, 1),rgba(255,150,0,.3) 100%);
+    background: linear-gradient(to bottom right,rgba(255,150,0, 1),rgba(255,150,0,.5) 100%);
 }
 
 #katrina {
-    background-image:url(http://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_katrina_bg.gif);
+    background-image:url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_katrina_bg.gif);
 }
 
 #hero-effect {
@@ -147,7 +131,7 @@ Background Image Styles
 }
 
 #gcl{
-    background-image: url(http://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_gcl_bg.gif)
+    background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_gcl_bg.gif)
 }
 
 #building-stronger-communities-together{
@@ -158,16 +142,12 @@ Background Image Styles
     background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_background1.png);
 }
 
-#NFL {
-    background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/United_Way_Images_for_Fox-4.jpeg);
-}
-
 #labor {
-    background-image: url(http://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_labor_bg.gif);
+    background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_labor_bg.gif);
 }
 
 #donors{
-    background-image: url(http://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_our-donors.jpg);
+    background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_our-donors.jpg);
 }
 
 #leadership-giving {
@@ -175,15 +155,21 @@ Background Image Styles
 }
 
 #volunteers {
-    background-image: url(http://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_volunteers.jpg);
+    background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_volunteers.jpg);
 }
 
-#financials div, #uw-map {
+#uw-map, #featured-partners, #financials div{
     background-color: white;
 }
 
+/* medium - */
 
-@media only screen and (max-width: 40em){
+@media screen and (max-width: 63.9375em) {
+
+    .callout.large.background-image{
+        background-attachment: scroll;
+    }
+
     #cover .cta-component--image:before {
         background: none;
     }
@@ -197,15 +183,14 @@ Background Image Styles
     }
 
     #beneficiaries .cta-component{
-        background-image: url(http://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_who-we-fight-for.png);
+        background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/AR_who-we-fight-for.png);
         background-attachment: scroll;
         height:500px;
     }
 
     #nfl .cta-component{
-        background-image: url(http://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_NFL-screenshot.png);
+        background-image: url(https://s3.amazonaws.com/uww.assets/site/annual_report/2015/ar_NFL-screenshot.png);
         background-attachment: scroll;
-        height:500px;
+        height:550px;
     }
-
 }

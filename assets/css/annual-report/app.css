@@ -1,9 +1,6 @@
 /*===== 
-
 United Way Worldwide Annual Report 2015
-
 Main Styles
-
 =====*/
 
 /*===== Global Styles =====*/
@@ -31,7 +28,7 @@ a:hover{
 }
 
 .row {
-    z-index: 3;
+    z-index: 4;
 }
 
 /*======== Nav / title bar =========*/
@@ -99,11 +96,13 @@ a:hover{
     border-bottom: 0;
 }
 
-
-
+.menu>li>a.image-link {
+    padding: 0;
+}
 
 #logo {
-    display:none;   
+    display: none;   
+    width: 100px;
 }
 
 #mobile-logo {
@@ -140,7 +139,7 @@ ul.menu.submenu.is-dropdown-submenu.first-sub.vertical {
 
 /*======== Cover ===========*/
 
-callout.primary{
+.callout.primary{
    /*. background: #10167f center center no-repeat;
     background-size: cover;
     position: relative;*/
@@ -182,91 +181,12 @@ callout.primary{
 }
 
 
-/*slider stuff */
-
-
-    /* bullet buttons */
-
-    .orbit-bullets button, .orbit-bullets button:after {
-        background: #969696;
-        border: 0;
-        box-sizing: border-box;
-        position: inherit;
-        padding: 0;
-    }
-
-    .orbit-bullets button:before {
-        border: 0;
-    }
-
-    .orbit-bullets button:after {
-        content: none;
-    }
-
-    .orbit-previous, .orbit-next, .orbit-bullets button {
-            z-index: 1;
-    }
-
-    .orbit-bullets button.is-active, .orbit-bullets button:hover {
-        background-color: #F87907;
-    }
-    
-
-    /*left-right buttons*/
-
-    .orbit-previous, .orbit-next {
-        background-color: #F87907;
-        border:none;
-        margin-top: -2.1875rem;
-        transition: .3s;
-        display: none;
-    }
-
-    .orbit-previous {
-       left: -30px;
-       transform: skew(20deg);
-        padding-left: 3.125rem;
-    }
-
-    .orbit-next {
-         right: -30px;
-        transform: skew(-20deg);
-        padding-right: 3.125rem;
-    }
-
-    button.orbit-previous:before, button.orbit-next:before{
-        border: none;
-    }
-
-    .orbit-next:hover, .orbit-previous:hover {
-        background-color: #F87907;
-    }
-
-
-    /*container*/
-
-    .orbit-slide {
-        width: 90%;
-        margin: 0 auto;
-        overflow: auto;
-    }
-
-    .orbit-container {
-        height: auto!important
-    }
-
-    li.orbit-slide.text-left.is-active {
-        max-height: 2000px!important;
-    }
-
-
-
 /*===== Buttons =====*/
 
 /* new CTA buttons */
 
     .button:after, button:after{
-        background:transparent
+        background: transparent;
     }
 
     .button, .button.secondary{
@@ -289,11 +209,11 @@ callout.primary{
     }
 
     .button:hover, .button.secondary:hover{
-        background:#DC3601;
+        background: #DC3601;
     }
 
     .button.ghost:hover{
-        background:#DC3601;
+        background: #DC3601;
         border-color: #DC3601;
     }
 
@@ -323,6 +243,7 @@ callout.primary{
     .reveal {
         padding-top: 4em;
         overflow: scroll;
+        z-index: 10;
     }
 
 /*========= Element Fixes =========*/
@@ -337,7 +258,6 @@ callout.primary{
 }
 
 .image-touts--four .image-touts__tout:hover:before {
-       /* background: none;*/
         background: rgba(124,129,184,.1);
     }
 
@@ -350,28 +270,81 @@ callout.primary{
 .image-touts--three span.image-touts__text {
     color: #F87907;
 }
- 
 
+
+/* cta fixes */
+ 
+#nfl .cta__dek {
+    font-family: "Trade Gothic W01","Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 2.125rem;
+}
 
 
 /*======= Media Queries ===========*/
 
-
-@media only screen and (min-width: 40em) {
-    #title{
-        margin-top: 25%;
-    }
-    
+ /* large + */
+@media screen and (min-width: 64em){
     #vertical-menu {
+        display: block;
+    }
+
+    #logo {
         display: block;
     }
     
     #accordion-menu {
-        display:none!important;
+        display: none!important;
     }
     
+    .no-js #responsive-menu {
+        display: block;
+    }
+
+    .no-js .top-bar-title {
+        display: none;
+    }
+
+    .image-touts--three .image-touts__tout:hover .image-touts__text {
+        left: 5%;
+        bottom: 0;
+    }
+
+    #nfl .cta__hed {
+        font-size: 3.625rem;
+    }
+
+    #nfl .cta__dek {
+        font-size: 2.125rem;
+    }
+}
+
+/* medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    #nfl .cta__hed {
+        font-size: 2.8125rem;
+    }
+
+    #nfl .cta__dek {
+        font-size: 2rem;
+    }
+}
+
+
+/* medium + */
+@media only screen and (min-width: 40em) {
+    #title{
+        margin-top: 25%;
+    }
+
+    #mobile-logo {
+        width: 100px;
+    }
+
+    #hamburger {
+        margin-top: .6rem;
+    }
+      
     .reveal{
-        padding-top: 4em;
         opacity: .9;
     }
     
@@ -382,36 +355,12 @@ callout.primary{
     #underlay-container .row {
         top: 50%;
     }
-    
-    #logo {
-        display: block;
-        width: 100px;
-    }
-    
-    .orbit-previous, .orbit-next {
-        display: block;
-    }
-    
-    .no-js #responsive-menu {
-        display: block;
-    }
 
-    .no-js .top-bar-title {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 64.063em){
-.image-touts--three .image-touts__tout:hover .image-touts__text {
-    left: 5%;
-    bottom: 0;
-    }
 }
 
 /* against the rules rules */
-
-@media only screen and (max-width: 40em){
-
+/* small - */
+@media screen and (max-width: 39.9375em){
     .callout.large {
         padding: .3rem;
     }
@@ -420,13 +369,13 @@ callout.primary{
         padding-top: 1rem;
     }
     
-    .callout.large.background-image{
-        background-attachment: scroll;
+
+    #nfl .cta__hed {
+        font-size: 2.1875rem;
     }
-    
-    .js-dropdown-active li {
-        background: rgba(0,0,0,1);
+
+    #nfl .cta__dek {
+        font-size: 1.75rem;
     }
-    
 
 }
